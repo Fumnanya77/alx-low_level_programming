@@ -1,6 +1,6 @@
 #ifndef MAIN_FILE
 #define MAIN_FILE
 
-int main(void)
+int _putchar(char c);
 
 #endif

@@ -11,13 +11,8 @@
 
 int main(void)
 {
-	char *ch = "_putchar";
+	char ch = "_putchar";
 
-	while (*ch != '\0')
-	{
-		putchar(*ch);
-		ch = ch + 1;
-	}
-	putchar('\n');
+	_putchar(ch);
 	return (0);
 }
