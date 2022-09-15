@@ -11,8 +11,9 @@
 
 int main(void)
 {
-	char *ch = "_putchar";
+	char *ch = "_putchar\n";
 
+	for (; *ch != '\0'; ch++)
 	_putchar(*ch);
 	return (0);
 }
