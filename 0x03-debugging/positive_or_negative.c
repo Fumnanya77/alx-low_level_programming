@@ -5,8 +5,6 @@
  * main - Entry point
  *
  * Print: An if else statements to detect positive and negative numbers
- *
- * Return: Always 0 (Success)
  */
 void positive_or_negative(int n)
 {
