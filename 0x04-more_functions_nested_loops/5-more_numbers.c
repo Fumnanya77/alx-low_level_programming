@@ -11,7 +11,6 @@ void more_numbers(void)
 	char c;
 	int x;
 	int z;
-	int a = 0;
 
 	for (x = 1; x <= 10; x++)
 	{
@@ -19,14 +18,10 @@ void more_numbers(void)
 		{
 			_putchar(c);
 		}
-		while (a < 5)
+		for (z = '0'; z <= '5'; z++)
 		{
 			_putchar('1');
-			for (z = '0'; z < 5; z++)
-			{
-				_putchar(z);
-			}
-			a++;
+			_putchar(z);
 		}
 		_putchar('\n');
 	}
