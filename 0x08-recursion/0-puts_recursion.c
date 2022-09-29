@@ -10,7 +10,7 @@
 
 void _puts_recursion(char *s)
 {
-	char str[20];
+	char str[50];
 
 	strcpy(str, s);
 
