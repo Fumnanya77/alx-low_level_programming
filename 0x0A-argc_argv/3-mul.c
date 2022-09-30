@@ -11,13 +11,14 @@
 
 int main(int argc, char *argv[])
 {
-	int i, mul = 1;
+	int i;
+	int mul = 1;
 
 	for (i = 0; i < argc; i++)
 	{
-		if (isdigit(argv[i]))
+		if (isdigit(*argv[i]))
 		{
-			mul = mul * argv[i];
+			mul = mul * atoi(argv[i]);
 			printf("%d\n", mul);
 		}
 		else
