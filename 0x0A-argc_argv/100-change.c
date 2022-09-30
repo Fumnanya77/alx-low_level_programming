@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 	int coins[10] = {50, 25, 10, 5, 2};
 
 	money = atoi(argv[1]);
-	printf("%d\n", money);
+	/*printf("%d\n", money);*/
 	/*printf("%d\n", argc);*/
 
 	if (money < 0)
