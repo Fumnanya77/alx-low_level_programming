@@ -12,7 +12,7 @@
 int main(int argc, char *argv[])
 {
 	int money, i, sum = 0, a = 0;
-	int coins[10] = {25, 10, 5, 2};
+	int coins[10] = {50, 25, 10, 5, 2};
 
 	money = atoi(argv[1]);
 	printf("%d\n", money);
