@@ -1,3 +1,4 @@
+#include <unistd.h>
 #include "main.h"
 
 /**
@@ -14,18 +15,18 @@ int main(void)
 	{
 		if ((i % 15) == 0)
 		{
-			printf("FizzBuzz");
+			write(1, "FizzBuzz", 8);
 		}
 		else if ((i % 5) == 0)
 		{
-			printf("Buzz");
+			write(1, "Buzz", 4);
 		} else if ((i % 3) == 0)
 		{
-			printf("Fizz");
+			write(1, "Fizz", 4);
 		}
 		else
 		{
-			printf("%d", i);
+			write(1, i, 2);
 		}
 		putchar(' ');
 	}

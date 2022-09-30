@@ -1,1 +1,1 @@
-Welcoming myself to C Programming!
+This directory is on pointers and arrays and strings
