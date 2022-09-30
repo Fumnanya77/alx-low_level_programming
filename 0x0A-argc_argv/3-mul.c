@@ -16,9 +16,9 @@ int main(int argc, char *argv[])
 
 	for (i = 0; i < argc; i++)
 	{
-		if (isdigit(*argv[i]))
+		if (isdigit(argv[i]))
 		{
-			mul = mul * atoi(argv[i]);
+			mul = mul * argv[i];
 			printf("%d\n", mul);
 		}
 		else
