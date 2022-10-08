@@ -1,1 +1,1 @@
-This directory is on pointers and arrays and strings
+This is directory is contains programs written i C programming language
