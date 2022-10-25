@@ -17,7 +17,7 @@ size_t print_listint(const listint_t *h)
 
 	for (i = 0; tem != NULL; i++)
 	{
-		_putchar((tem->n)%10 + '0');
+		_putchar((tem->n) % 10 + '0');
 		_putchar('\n');
 		tem = tem->next;
 	}
