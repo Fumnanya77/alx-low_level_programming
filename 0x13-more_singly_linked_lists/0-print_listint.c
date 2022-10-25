@@ -11,12 +11,14 @@
 size_t print_listint(const listint_t *h)
 {
 	size_t i;
+	const listint_t *tem;
+	tem = h;
 
-	for (i = 0; h != NULL; i++)
+	for (i = 0; tem != NULL; i++)
 	{
-		_putchar((h->n)%10 + '0');
+		_putchar((tem->n)%10 + '0');
 		_putchar('\n');
-		h = h->next;
+		tem = tem->next;
 	}
 	return (i);
 }
