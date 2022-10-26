@@ -10,5 +10,15 @@
 
 void free_listint(listint_t *head)
 {
-	free(head);
+	unsigned int i;
+	listint_t *temp;
+
+	temp = head;
+
+	for (i = 0; temp != NULL; i++)
+	{
+		free(temp);
+		temp = temp->next;
+	}
+	free((void *)print_listint(head));
 }
