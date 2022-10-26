@@ -1,6 +1,39 @@
 #include "lists.h"
 
 /**
+ * print_p - print out a positive integer using putchar
+ *
+ * @n: the number to print
+ *
+ * Return: Nothing
+ */
+
+void print_p(unsigned int n)
+{
+	if (n/10 != 0)
+		print_p(n/10);
+	_putchar((n % 10) + '0');
+}
+
+/**
+ * print - print integers using putchar
+ *
+ * @n: the number to print
+ *
+ * Return: Nothing
+ */
+
+void print(int n)
+{
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
+	print_p((unsigned int)n);
+}
+
+/**
  * print_listint - print a given list of int
  *
  * @h: a pointer to the list  to be printed
@@ -17,7 +50,7 @@ size_t print_listint(const listint_t *h)
 
 	for (i = 0; tem != NULL; i++)
 	{
-		_putchar((tem->n) % 10 + '0');
+		print(tem->n);
 		_putchar('\n');
 		tem = tem->next;
 	}
