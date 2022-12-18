@@ -1,1 +1,1 @@
-This is directory is contains programs written i C programming language
+This directory is for variadic functions
