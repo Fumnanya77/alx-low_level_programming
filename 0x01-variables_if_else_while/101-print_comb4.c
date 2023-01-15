@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char i, j, x;
+	short int i, j, x;
 
 	for (i = '0'; i <= '7'; i++)
 	{
@@ -21,7 +21,7 @@ int main(void)
 				putchar(i);
 				putchar(j);
 				putchar(x);
-				if (i < '8')
+				if (i < '7')
 				{
 					putchar(',');
 					putchar(' ');
