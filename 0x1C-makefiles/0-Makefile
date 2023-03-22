@@ -1,2 +1,2 @@
 all : $(school)
-	gcc -o $(school)
+	cc -o $(school)
