@@ -1,2 +1,2 @@
 all : $(school)
-	cc -o $(school)
+	cc -c $(school)
