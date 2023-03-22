@@ -1,0 +1,3 @@
+all : $(school)
+	$(CC) $(SRC) -c $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)

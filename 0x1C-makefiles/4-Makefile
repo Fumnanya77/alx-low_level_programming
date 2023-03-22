@@ -1,0 +1,20 @@
+all : $(school)
+	$(CC) $(CFLAGS) $(SRC) -c $(OBJ)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+
+.PHONY: clean oclean fclean re
+
+clean:
+	$(RM) $(school) temp
+	$(RM) $(NAME) temp
+
+oclean:
+	$(RM) *.o
+
+fclean:
+	$(RM) *.o temp
+	$(RM) $(school) temp
+	$(RM) $(NAME) temp
+
+re:
+	$(CC) $(CFLAGS) -c -o $(OBJ) $(SRC)

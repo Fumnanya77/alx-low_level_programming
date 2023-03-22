@@ -1,0 +1,20 @@
+ifdef "m.h"
+.PHONY: all
+all : $(school)
+	$(CC) $(SRC) -c $(OBJ) -o $(NAME)
+
+.PHONY: clean oclean fclean re
+
+clean:
+	$(RM) $(school) temp
+	$(RM) $(NAME) temp
+
+oclean:
+	$(RM) *.o
+
+fclean:
+	$(RM) *.o temp
+	$(RM) $(school) temp
+	$(RM) $(NAME) temp
+
+re: all
