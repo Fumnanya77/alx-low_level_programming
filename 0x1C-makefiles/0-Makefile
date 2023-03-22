@@ -1,2 +1,2 @@
 all : $(school)
-	gcc $school -o school
+	gcc -o $(school)
