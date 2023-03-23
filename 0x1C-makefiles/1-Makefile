@@ -1,2 +1,2 @@
-all : $(school)
-	$(CC) $(SRC)
+all : $(SRC)
+	$(CC) $(SRC) -o school
