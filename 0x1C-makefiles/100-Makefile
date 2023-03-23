@@ -5,8 +5,7 @@ all : $(school)
 
 .PHONY: clean oclean fclean re
 
-clean:
-	$(RM) $(school) temp
+clean
 	$(RM) $(NAME) temp
 
 oclean:
