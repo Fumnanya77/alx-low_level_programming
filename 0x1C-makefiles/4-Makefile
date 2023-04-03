@@ -20,6 +20,5 @@ fclean:
 	$(RM) *~ $(NAME)
 	$(RM) *.o
 
-re: $(SRC)
+re: all
 	$(RM) *.o
-	$(CC) $(CLAGS) $(OBJ) -o $(NAME)
