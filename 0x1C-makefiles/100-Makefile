@@ -3,11 +3,12 @@ CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-RM = rm -f
+RM = rm -f *.o
+DEL = rm -f *.o
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
 all : $(OBJ)
-	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
+	$(CC) -Wall -Werror -Wextra -pedantic $(OBJ) -o $(NAME)
 
 .PHONY: clean oclean fclean re
 
@@ -15,12 +16,12 @@ clean:
 	$(RM) *~ $(NAME)
 
 oclean:
-	$(RM) *.o
+	$(DEL)
 
 fclean:
 	$(RM) *~ $(NAME)
-	$(RM) *.o
+	$(DEL)
 
 re: all
-	$(RM) *.o
+	$(DEL)
 endif
