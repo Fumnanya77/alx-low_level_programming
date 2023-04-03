@@ -2,11 +2,7 @@ CC = gcc
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-<<<<<<< HEAD
+
 all : $(NAME)
 $(NAME): $(OBJ)
 	$(CC) -o $@ $<
-=======
-all : $(SRC)
-	$(CC) $(OBJ) -o $(NAME)
->>>>>>> 68164aac6f4b5f1f2104c98d0c9ffcdf06650c0a
