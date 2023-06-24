@@ -1,4 +1,5 @@
 #include "main.h"
+#include <string.h>
 
 /**
  * _strpbrk - searches and returns a string in s valid in accept

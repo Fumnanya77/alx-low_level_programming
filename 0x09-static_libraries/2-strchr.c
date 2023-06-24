@@ -1,4 +1,6 @@
 #include "main.h"
+#include <ctype.h>
+#include <string.h>
 
 /**
  * _strchr - return a pointer to the first ocuurence of the specidfied letter
